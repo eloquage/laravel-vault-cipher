@@ -6,3 +6,8 @@ parameters:
     tmpDir: build/phpstan
     checkOctaneCompatibility: true
     checkModelProperties: true
+    excludePaths:
+        analyse:
+            - tests/Pest.php
+    peststan:
+        testCaseClass: IllumaLaw\VaultCipher\Tests\TestCase

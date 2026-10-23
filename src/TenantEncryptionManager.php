@@ -272,21 +272,15 @@ class TenantEncryptionManager
         $tempHandle = fopen($tempPath, 'wb');
 
         if ($tempHandle === false) {
-            if (is_resource($stream)) {
-                fclose($stream);
-            }
+            fclose($stream);
             throw new RuntimeException('Unable to open temporary file for writing.');
         }
 
         try {
             stream_copy_to_stream($stream, $tempHandle);
         } finally {
-            if (is_resource($stream)) {
-                fclose($stream);
-            }
-            if (is_resource($tempHandle)) {
-                fclose($tempHandle);
-            }
+            fclose($stream);
+            fclose($tempHandle);
         }
 
         return $tempPath;
@@ -303,9 +297,7 @@ class TenantEncryptionManager
         try {
             $this->disk($disk)->put($path, $stream);
         } finally {
-            if (is_resource($stream)) {
-                fclose($stream);
-            }
+            fclose($stream);
         }
     }
 
