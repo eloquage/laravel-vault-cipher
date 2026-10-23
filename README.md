@@ -1,7 +1,7 @@
 # Laravel Vault Cipher
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/illuma-law/laravel-vault-cipher.svg?style=flat-square)](https://packagist.org/packages/illuma-law/laravel-vault-cipher)
-[![GitHub Tests Action Action Status](https://img.shields.io/github/actions/workflow/status/illuma-law/laravel-vault-cipher/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/illuma-law/laravel-vault-cipher/actions/workflows/run-tests.yml)
+[![GitHub Tests Action Action Status](https://img.shields.io/github/actions/workflow/status/eloquage/laravel-vault-cipher/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/eloquage/laravel-vault-cipher/actions/workflows/run-tests.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/illuma-law/laravel-vault-cipher.svg?style=flat-square)](https://packagist.org/packages/illuma-law/laravel-vault-cipher)
 
 Tenant-aware streaming encryption for Laravel applications.
