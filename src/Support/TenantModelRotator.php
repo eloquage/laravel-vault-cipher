@@ -33,10 +33,7 @@ class TenantModelRotator
                 }
 
                 if ($updates !== []) {
-                    $resolvedModelClass = $record::class;
-                    $resolvedModelClass::query()
-                        ->whereKey($record->getKey())
-                        ->update($updates);
+                    $record->forceFill($updates)->saveQuietly();
                 }
             }
         });

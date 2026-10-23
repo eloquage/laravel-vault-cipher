@@ -113,7 +113,6 @@ it('forgets tenant encrypters', function () {
     $manager = app(\IllumaLaw\VaultCipher\TenantEncryptionManager::class);
     $reflection = new \ReflectionClass($manager);
     $property = $reflection->getProperty('encrypters');
-    $property->setAccessible(true);
 
     expect($property->getValue($manager))->toHaveKey($tenantId);
 
