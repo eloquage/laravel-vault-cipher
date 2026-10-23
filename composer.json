@@ -41,6 +41,11 @@
             "IllumaLaw\\VaultCipher\\Tests\\": "tests/"
         }
     },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse --memory-limit=512M",
+        "format": "vendor/bin/pint",
+        "test": "vendor/bin/pest"
+    },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
