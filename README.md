@@ -7,7 +7,7 @@ You provide the key storage and lookup implementation; the package supplies
 the encryption manager, streaming file support, and Eloquent casts.
 
 [![Tests](https://github.com/eloquage/laravel-vault-cipher/actions/workflows/run-tests.yml/badge.svg)](https://github.com/eloquage/laravel-vault-cipher/actions/workflows/run-tests.yml)
-[![Latest Version](https://img.shields.io/packagist/v/illuma-law/laravel-vault-cipher)](https://packagist.org/packages/illuma-law/laravel-vault-cipher)
+[![Latest Version](https://img.shields.io/packagist/v/eloquage/laravel-vault-cipher)](https://packagist.org/packages/eloquage/laravel-vault-cipher)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Requires PHP 8.3+ and Laravel 11, 12, or 13.
@@ -15,7 +15,7 @@ Requires PHP 8.3+ and Laravel 11, 12, or 13.
 ## Install
 
 ```bash
-composer require illuma-law/laravel-vault-cipher
+composer require eloquage/laravel-vault-cipher
 php artisan vendor:publish --tag=vault-cipher-config
 ```
 
