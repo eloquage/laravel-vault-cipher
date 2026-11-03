@@ -7,7 +7,7 @@ metadata:
 
 # Laravel package development
 
-Use this skill when changing this Composer package: `illuma-law/laravel-vault-cipher` — Tenant-aware streaming encryption for Laravel.
+Use this skill when changing this Composer package: `eloquage/laravel-vault-cipher` — Tenant-aware streaming encryption for Laravel.
 
 ## Package context
 

@@ -1,4 +1,4 @@
-# illuma-law/laravel-vault-cipher
+# eloquage/laravel-vault-cipher
 
 Tenant-aware streaming encryption for strings and files.
 

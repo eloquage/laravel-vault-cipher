@@ -1,5 +1,5 @@
 {
-    "name": "illuma-law/laravel-vault-cipher",
+    "name": "eloquage/laravel-vault-cipher",
     "description": "Tenant-aware streaming encryption for Laravel.",
     "type": "library",
     "license": "MIT",

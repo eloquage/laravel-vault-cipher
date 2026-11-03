@@ -7,7 +7,7 @@ metadata:
 
 # GitHub README
 
-For `illuma-law/laravel-vault-cipher` (Tenant-aware streaming encryption for Laravel.), make the README useful to a developer deciding whether to install the package and then trying it in a real application.
+For `eloquage/laravel-vault-cipher` (Tenant-aware streaming encryption for Laravel.), make the README useful to a developer deciding whether to install the package and then trying it in a real application.
 
 ## Ground every claim
 
