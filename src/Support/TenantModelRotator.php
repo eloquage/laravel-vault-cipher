@@ -20,7 +20,7 @@ class TenantModelRotator
         $query->chunkById($chunkSize, function (iterable $records) use ($columns): void {
             foreach ($records as $record) {
                 /** @var Model $record */
-                $updates = [];
+                $updated = false;
 
                 foreach ($columns as $column) {
                     $rawValue = $record->getRawOriginal($column);
@@ -29,11 +29,12 @@ class TenantModelRotator
                         continue;
                     }
 
-                    $updates[$column] = $this->rotator->rotateString($rawValue);
+                    $record->setAttribute($column, $this->rotator->rotateString($rawValue));
+                    $updated = true;
                 }
 
-                if ($updates !== []) {
-                    $record->forceFill($updates)->saveQuietly();
+                if ($updated) {
+                    $record->saveQuietly();
                 }
             }
         });
